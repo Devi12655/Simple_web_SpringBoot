@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Shop</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- 🔷 NAVBAR -->
+<nav class="navbar">
+    <div class="logo">🛒 Shop</div>
+
+    <div class="search-wrapper">
+    <span class="search-icon">🔍</span>
+    <input type="text" id="searchInput" placeholder="Search products...">
+</div>
+    <!-- 📂 CATEGORY FILTER -->
+    <select id="categoryFilter">
+        <option value="all">All Categories</option>
+        <option value="smartphone">Smartphones</option>
+        <option value="electronics">Electronics</option>
+        <option value="laptop">Laptops</option>
+    </select>
+
+    <a href="add-product.html" class="add-btn">+ Add Product</a>
+</nav>
+
+<!-- 🔶 MAIN CONTENT -->
+<div class="container">
+
+    <h2 style="margin-bottom:15px;">All Products</h2>
+
+    <div id="productList" class="grid"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

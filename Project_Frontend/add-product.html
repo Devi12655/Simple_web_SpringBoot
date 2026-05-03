@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Add Product</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">🛒 Shop</div>
+    <a href="index.html" class="add-btn">← Back</a>
+</nav>
+
+<!-- FORM -->
+<div class="form-page">
+
+    <div class="form-card">
+
+        <h2>Add New Product</h2>
+
+        <form id="productForm">
+
+            <div class="form-grid">
+
+                <input type="text" id="name" placeholder="Product Name" required>
+
+                <input type="text" id="brand" placeholder="Brand">
+
+                <!-- CATEGORY DROPDOWN -->
+                <select id="category" required>
+                    <option value="">Select Category</option>
+                    <option value="smartphone">Smartphone</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="laptop">Laptop</option>
+                    <option value="fashion">Fashion</option>
+                </select>
+
+                <input type="number" id="price" placeholder="Price">
+
+                <input type="number" id="quantity" placeholder="Stock Quantity">
+
+                <input type="date" id="releaseDate">
+
+            </div>
+
+            <!-- FULL WIDTH -->
+            <textarea id="description" placeholder="Product Description"></textarea>
+
+            <!-- FILE UPLOAD -->
+            <div class="file-upload">
+                <input type="file" id="image" required>
+            </div>
+
+            <button type="submit" class="primary-btn">Save Product</button>
+
+        </form>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

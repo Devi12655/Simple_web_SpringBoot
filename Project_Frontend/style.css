@@ -1,0 +1,399 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f1f3f6;
+    color: #222;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #131921;
+    padding: 12px 20px;
+    color: white;
+}
+
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.navbar input {
+    flex: 1;
+    max-width: 450px;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    outline: none;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+/* 🔥 Focus effect (important) */
+.navbar input:focus {
+    border-color: #fb641b;
+    box-shadow: 0 0 0 2px rgba(251, 100, 27, 0.2);
+}
+
+.navbar select {
+    padding: 8px;
+    border-radius: 6px;
+}
+
+.add-btn {
+    background: #f90;
+    padding: 8px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+.search-wrapper {
+    position: relative;
+    flex: 1;
+    max-width: 450px;
+}
+
+.search-wrapper input {
+    width: 100%;
+    padding: 10px 14px 10px 38px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    outline: none;
+    font-size: 14px;
+}
+
+/* 🔍 ICON */
+.search-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #9ca3af;
+    font-size: 14px;
+}
+
+/* focus effect */
+.search-wrapper input:focus {
+    border-color: #fb641b;
+    box-shadow: 0 0 0 2px rgba(251, 100, 27, 0.2);
+}
+
+/* ================= GRID ================= */
+.container {
+    padding: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 20px;
+}
+
+/* ================= CARD ================= */
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 12px;
+    transition: 0.3s;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.title {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.price {
+    color: #16a34a;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.brand {
+    font-size: 12px;
+    color: gray;
+}
+
+/* ================= FORM PAGE ================= */
+.form-page {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.form-card {
+    width: 420px;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.form-card h2 {
+    margin-bottom: 15px;
+}
+
+.form-card input,
+.form-card textarea {
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.form-card textarea {
+    resize: none;
+    height: 80px;
+}
+
+.form-card button {
+    width: 100%;
+    padding: 12px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.form-card button:hover {
+    background: #1d4ed8;
+}
+
+/* ================= DETAILS PAGE ================= */
+.details-container {
+    width: 80%;
+    margin: 40px auto;
+    display: flex;
+    gap: 40px;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.details-img {
+    flex: 1;
+}
+
+.details-img img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.details-info {
+    flex: 1;
+}
+
+.details-info h2 {
+    margin-bottom: 10px;
+}
+
+.details-info .price {
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+.details-info p {
+    margin: 6px 0;
+}
+
+.buy-btn {
+    margin-top: 20px;
+    padding: 12px 20px;
+    background: #f90;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+/* FORM GRID */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+/* DROPDOWN */
+.form-card select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background: white;
+}
+
+/* TEXTAREA FULL WIDTH */
+.form-card textarea {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* FILE UPLOAD */
+.file-upload {
+    margin: 10px 0;
+}
+
+.file-upload input {
+    padding: 8px;
+}
+
+/* BUTTON */
+.primary-btn {
+    width: 100%;
+    padding: 12px;
+    background: #fb641b; /* Flipkart orange */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.primary-btn:hover {
+    background: #e85c1a;
+}
+/* DETAILS PAGE PROFESSIONAL */
+.details-container {
+    width: 85%;
+    margin: 40px auto;
+    display: flex;
+    gap: 40px;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.details-left {
+    flex: 1;
+    text-align: center;
+}
+
+.details-image {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+}
+
+.cart-btn {
+    margin-top: 15px;
+    width: 100%;
+    padding: 12px;
+    background: #ff9f00;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.buy-btn {
+    margin-top: 10px;
+    width: 100%;
+    padding: 12px;
+    background: #fb641b;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.details-right {
+    flex: 2;
+}
+
+.details-right h2 {
+    margin-bottom: 10px;
+}
+
+.desc {
+    margin: 15px 0;
+    color: #444;
+}
+
+.extra p {
+    margin: 5px 0;
+}
+.details-actions {
+    margin-top: 20px;
+    display: flex;
+    gap: 12px;
+}
+
+.edit-btn {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.delete-btn {
+    background: #dc2626;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.edit-btn:hover {
+    background: #1d4ed8;
+}
+
+.delete-btn:hover {
+    background: #b91c1c;
+}
+.image-section {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.image-section img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.upload-label {
+    font-size: 14px;
+    color: #555;
+}
+
+#image {
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #fff;
+}
