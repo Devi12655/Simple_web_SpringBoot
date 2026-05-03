@@ -66,8 +66,3 @@ This is a simple web-based application developed using **Spring Boot** for the b
 
 This project is created for learning purposes to understand the fundamentals of Spring Boot and full-stack development.
 
----
-
-If you want, I can also:
-👉 make it **more attractive with screenshots + badges (GitHub level)**
-👉 or convert this into a **portfolio-ready project explanation for interviews**
